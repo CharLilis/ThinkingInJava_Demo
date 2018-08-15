@@ -9,7 +9,7 @@ package com.lilith.thinkinginjava.unit15;
 public class HijackedInterface {
 
 }
-class Cat extends ComparablePet implements Comparable<Cat>{
+class Cat1 extends ComparablePet implements Comparable<Cat1>{
 	public int compareTo(ComparablePet arg0) {
 		return 0;
 	}
