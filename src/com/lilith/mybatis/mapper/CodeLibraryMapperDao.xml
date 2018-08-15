@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"      
+ "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+
+<mapper namespace="com.lilith.mybatis.dao.CodeLibraryMapperDao">
+
+	<select id="addCodeLibrary" 
+		parameterType="com.lilith.mybatis.entity.CodeLibrary">
+		insert into code_library (codeno, itemno, itemname) 
+			values (#{codeNo}, #{itemNo}, #{itemName})
+	</select>
+	
+	<delete id="deleteCodeLibrary" parameterType="String">
+		delete from code_library where codeno = #{codeNo}
+	</delete>
+	
+	<select id="selectCodeLibrary" parameterType="String" resultType="com.lilith.mybatis.entity.CodeLibrary">
+		select codeNo, itemNo, itemName from code_library where codeno = #{codeNo}
+	</select>
+	
+	<select id="selectCodeLibraryALL" resultType="com.lilith.mybatis.entity.CodeLibrary">
+		select codeNo, itemNo, itemName from code_library order by codeno
+	</select>
+</mapper>
