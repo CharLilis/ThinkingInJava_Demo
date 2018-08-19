@@ -43,6 +43,7 @@ interface Basic{
 	public String get();
 }
 class BasicImp implements Basic{
+	public BasicImp() {}
 	private String value;
 	public void set(String val) {
 		value = val;

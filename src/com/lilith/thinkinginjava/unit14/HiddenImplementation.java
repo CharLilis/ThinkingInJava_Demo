@@ -3,7 +3,7 @@ package com.lilith.thinkinginjava.unit14;
 import java.lang.reflect.Method;
 /**
  * P347
- * 
+ * 利用反射调用类中的private方法
  * @author Perform
  *
  */

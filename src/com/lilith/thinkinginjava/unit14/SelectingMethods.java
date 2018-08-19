@@ -29,7 +29,6 @@ class MethodSelector implements InvocationHandler{
 	public MethodSelector(Object proxied) {
 		this.proxied = proxied;
 	}
-	@Override
 	public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
 		if(method.getName().equals("interesting")) {
 			println("Proxy detected the interesting method");
@@ -45,19 +44,15 @@ interface SomeMethods{
 }
 
 class Implementation implements SomeMethods{
-	@Override
 	public void boring1() {
 		println("boring1");
 	}
-	@Override
 	public void boring2() {
 		println("boring2");
 	}
-	@Override
 	public void interesting(String arg) {
 		println("interesting " + arg);
 	}
-	@Override
 	public void boring3() {
 		println("boring3");
 	}
