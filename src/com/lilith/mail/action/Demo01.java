@@ -5,7 +5,12 @@ import java.net.URI;
 import org.junit.Test;
 
 import com.lilith.mail.demo.MailSender;
-
+/**
+ * 邮件
+ * 测试类
+ * @author Perform
+ *
+ */
 public class Demo01 {
 
 	@Test

@@ -26,15 +26,23 @@ public class MailSender {
 	
 	
 	public void init(String stmphost, String username, String password) {
+		//放入配置信息
 //		pro.setProperty("mail.transport.protocol", "smtp");
 		pro.setProperty("mail.smtp.auth", "true");
 		pro.setProperty("mail.smtp.host", stmphost);
 //		pro.put("mail.stmp.auth", "true");
 //		pro.put("mail.stmp.host", stmphost);
 		authenticator = new MailAuthenticator(username, password);
+		//放入用户信息
 		session = Session.getInstance(pro, authenticator);
 	}
-	
+	/**
+	 * 发送邮件
+	 * @param recipient	目标邮箱地址
+	 * @param header	标题
+	 * @param context	内容正文
+	 * @throws Exception
+	 */
 	public void sends(String recipient, String header, String context) throws Exception{
 		MimeMessage message = new MimeMessage(session);
 		message.setFrom(new InternetAddress(authenticator.getUsername()));

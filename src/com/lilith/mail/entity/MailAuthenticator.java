@@ -2,7 +2,11 @@ package com.lilith.mail.entity;
 
 import javax.mail.Authenticator;
 import javax.mail.PasswordAuthentication;
-
+/**
+ * 发送者的用户信息
+ * @author Perform
+ *
+ */
 public class MailAuthenticator extends Authenticator{
 	/*
 	 *	用户名 
