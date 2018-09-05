@@ -1,7 +1,13 @@
 package com.lilith.thinkinginjava.unit16;
 
 import java.util.Arrays;
-
+/**
+ * P442
+ * 数组——创建测试数据
+ * 练习Array.fill()
+ * @author Perform
+ *
+ */
 public class FillingArrays {
 	public static void main(String[] args) {
 		int size = 6;
