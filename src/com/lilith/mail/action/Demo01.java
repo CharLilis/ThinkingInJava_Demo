@@ -15,11 +15,11 @@ public class Demo01 {
 
 	@Test
 	public void testMailSend() throws Exception {
-		String username = "ChenPopcorn@126.com";
-		String password = "popcorn123";
+		String username = "";
+		String password = "";
 		String stmpIp = "smtp.126.com";
 		MailSender sender = new MailSender(stmpIp, username, password);
-		sender.sends("565804861@qq.com", "测试", "你好");
+		sender.sends("", "测试", "你好");
 	}
 	
 //	@Test
