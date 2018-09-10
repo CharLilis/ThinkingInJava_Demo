@@ -19,7 +19,7 @@ public class TestClass01 {
 
 //	@Test
 	public void selectBak(){
-		String path = "Z:\\陈杰";
+		String path = "Z:\\东木";
 		File file = new File(path);
 //		File[] files = file.listFiles(new FileFilter() {
 //			public boolean accept(File file) {

@@ -19,7 +19,7 @@ public class Demo01 {
 		String password = "";
 		String stmpIp = "smtp.126.com";
 		MailSender sender = new MailSender(stmpIp, username, password);
-		sender.sends("", "测试", "你好");
+		sender.sends("·", "测试", "你好");
 	}
 	
 //	@Test

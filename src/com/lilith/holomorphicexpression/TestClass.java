@@ -6,7 +6,7 @@ public class TestClass {
 //	@Test
 	public void testStringMatches() {
 		String regex = "(\\+\\d{2}\\s)?\\d{11}";
-		String phoneNo = "+86 18983194071";
+		String phoneNo = "+86 14223432342";
 		System.out.println(phoneNo.matches(regex));
 	}
 	
