@@ -8,6 +8,7 @@ import java.util.Map;
  *
  */
 public class SingleCaseMap {
+	//单例模式
 	private static final SingleCaseMap singleMap = new SingleCaseMap();
 	private Map<String, Object> cacheMap = new HashMap<String, Object>();
 	/**
