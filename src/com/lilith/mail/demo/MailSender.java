@@ -24,7 +24,12 @@ public class MailSender {
 		init(stmphost, username, password);
 	}
 	
-	
+	/**
+	 * 初始化登陆信息
+	 * @param stmphost
+	 * @param username
+	 * @param password
+	 */
 	public void init(String stmphost, String username, String password) {
 		//放入配置信息
 //		pro.setProperty("mail.transport.protocol", "smtp");
