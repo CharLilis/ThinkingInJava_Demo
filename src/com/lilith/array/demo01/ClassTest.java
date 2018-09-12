@@ -9,6 +9,9 @@ import org.junit.Test;
  *
  */
 public class ClassTest {
+	/**
+	 * 从末尾开始，以此比较当前元素与它之前所有元素的大小，将最大值移入当前位置
+	 */
 //	@Test
 	public void testArraySort() {
 		int[] a = {6,5,4,3,2,1};
@@ -25,6 +28,9 @@ public class ClassTest {
 		}
 	}
 	
+	/**
+	 * 从头开始，当前元素和之后所有元素的大小，最大的放入当前位置
+	 */
 	public void testArraySort02() {
 		int[] a = {6,5,4,3,2,1};
 		int temp;
@@ -40,6 +46,9 @@ public class ClassTest {
 		}
 	}
 	
+	/**
+	 * 从头开始，当前元素和之后所有元素的大小，最大的放入当前位置
+	 */
 	@Test
 	public void testArraySort1() {
 		int[] arr = new int[6];
