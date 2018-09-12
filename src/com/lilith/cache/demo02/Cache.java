@@ -42,7 +42,9 @@ public class Cache implements Comparable{
 		this.clearFlag = clearFlag;
 	}
 
-	@Override
+	/**
+	 * 重写比较方法
+	 */
 	public int compareTo(Object obj) {
 		Cache cache = (Cache)obj;
 		return this.key.compareTo(cache.key);
