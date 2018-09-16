@@ -14,18 +14,16 @@ public class TestThread02 {
 	
 	class Add implements Runnable{
 		
-		@Override
 		public synchronized void run() {
 			for(int j = 0; j < 100; j++) {
 				++i;
-				System.out.println(Thread.currentThread().getName()+ " i="+i);
+				System.out.println(Thread.currentThread().getName() + " i=" + i);
 			}
 		}
 		
 	}
 	
 	class Sub implements Runnable{
-		@Override
 		public synchronized void run() {
 			for(int j = 0; j < 100; j++) {
 				--i;

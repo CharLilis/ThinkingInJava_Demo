@@ -6,7 +6,11 @@ import org.junit.Test;
 
 import com.lilith.entity.Person;
 import com.lilith.entity.Person.One;
-
+/**
+ * 测试线程
+ * @author 56580
+ *
+ */
 public class Demo {
 	
 //	@Test
@@ -19,7 +23,6 @@ public class Demo {
 		//匿名内部类
 		new Thread(new Runnable() {
 			
-			@Override
 			public void run() {
 				
 			}
@@ -61,7 +64,6 @@ public class Demo {
 }
 
 class Thread1 implements Runnable{
-	@Override
 	public void run() {
 		System.out.println("Thread1 run....");
 		synchronized(Demo.class) {

@@ -9,8 +9,6 @@ public class TestThread03 {
 	public static void main(String[] args) {
 		for(int i = 0; i < 50; i++) {
 			Thread thread1 = new Thread(new Runnable() {
-				
-				@Override
 				public void run() {
 					for(int k = 0; k <10; k++) {
 						System.out.println("子线程第"+k+"次执行");

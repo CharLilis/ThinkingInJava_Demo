@@ -1,5 +1,9 @@
 package com.lilith.demo;
-
+/**
+ * 单例模式（懒汉）
+ * @author 56580
+ *
+ */
 public class TestClass02 {
 	
 	private static TestClass02 testClass = null;
