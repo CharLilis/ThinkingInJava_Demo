@@ -8,7 +8,6 @@ import org.springframework.web.servlet.mvc.Controller;
 
 public class HelloController implements Controller{
 
-	@Override
 	public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response) throws Exception {
 		System.out.println("收到请求");
 		return new ModelAndView("hello");
