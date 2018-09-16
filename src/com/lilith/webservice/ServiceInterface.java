@@ -11,7 +11,6 @@ public class ServiceInterface implements WebServiceInterface{
 //		return "SUCCESS";
 //	}
 
-	@Override
 	public String sayHello(String requestStr) {
 		System.out.println("+_+_+_+_+_+_+_+_+_+_+_");
 		return "Say Hello!";

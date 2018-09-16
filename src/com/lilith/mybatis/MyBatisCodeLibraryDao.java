@@ -17,13 +17,11 @@ public class MyBatisCodeLibraryDao implements CodeLibraryDao{
 		this.template = template;
 	}
 
-	@Override
 	public CodeLibrary selectCodeLibrary(String codeNo) {
 		CodeLibrary cl = template.selectOne("selectCodeLibrary", codeNo);
 		return cl;
 	}
 
-	@Override
 	public List<CodeLibrary> selectCodeLibraryAll() {
 		return template.selectList("selectCodeLibraryALL");
 	}
