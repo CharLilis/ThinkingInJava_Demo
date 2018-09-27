@@ -9,6 +9,7 @@ import static com.lilith.tool.Print.*;
 /**
  * P475
  * 深入研究容器——List的功能方法
+ * LinkedList：双向链表
  * @author Perform
  *
  */
@@ -19,11 +20,11 @@ public class Lists {
 	private static Iterator<String> it;
 	private static ListIterator<String> lit;
 	public static void basicTest(List<String> a) {
-		a.add(1, "x");
+		a.add(1, "x");//位置从0开始
 		a.add("x");
-		
+		//添加指定只会让
 		a.addAll(Countries.names(25));
-		
+		//在指定位置插入指定集合
 		a.addAll(3, Countries.names(25));
 		
 		b = a.contains("1");
@@ -35,13 +36,14 @@ public class Lists {
 		b = a.isEmpty();
 		it = a.iterator();
 		lit = a.listIterator();
+		//从指定位置开始遍历，位置从0开始
 		lit = a.listIterator(3);
 		
 		i = a.lastIndexOf("1");
 		a.remove(1);
 		a.remove("3");
 		a.set(1, "y");
-		
+		//删除目标集合中所有参数集合的元素
 		a.removeAll(Countries.names(25));
 		
 		a.removeAll(Countries.names(25));
