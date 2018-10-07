@@ -9,7 +9,11 @@ import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.PriorityBlockingQueue;
 
 import com.lilith.thinkinginjava.unit15.Generator;
-
+/**
+ * 
+ * @author Perform
+ *
+ */
 public class QueueBehavior {
 	private static int count = 10;
 	static <T> void test(Queue<T> queue, Generator<T> gen) {
